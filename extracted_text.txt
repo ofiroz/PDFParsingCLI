@@ -1,0 +1,54 @@
+         OFIR  
+                             OZERI                   
+                +972 -50-362-2203  
+                Ofirozr @gmail.com  
+                Linkedin.com/in/Ofir -Ozeri  
+ 
+ 
+OBJECTIVE  
+Seeking a qualified Backend Developer position. Holding a B.Sc. in Software Engineering, experienced in the Python and 
+Node.js ecosystems. Proven experience in both established global companies and start -ups. Familiar with both monolithic 
+and microservices architectures.  Skilled in developing and scaling new products and features, contributing to business 
+growth. Effective team member with excellent communication, training, and mentoring capabilities.  
+            PROFESSIONAL EXPERIENCE  
+2023 - Present |  Growthspace  | Senior Backend  Developer  
+• Developed backend solutions using Node.js, Sequelize.js, TypeScript, NestJS, and Express.js.  
+• Designed and implemented scalable and efficient backend systems.  
+• Collaborated closely with other team members to ensure seamless integration and delivery of new features.  
+• Optimized existing systems for performance and scalability.  
+• Conducted code reviews and provided mentorship to junior developers.  
+Tech Stack: Node.js, Docker, Git,  PostgreSQL, MongoDB, VS code, Google Cloud.  
+2021 - 2023 |  Stargo | Python Developer  
+● Created algorithms to convert unstructured data into structured formats.  
+● Introduced new solutions in a dynamic start -up environment to deliver reliable results quickly.  
+● Designed and implemented systems from start to finish.  
+● Mentored and assisted new employees.  
+● Utilized microservices architecture to build large, maintainable systems.  
+● Maintained close relations with other divisions to enhance inter -team communication and productivity.  
+Tech Stack: Python, Git actions,  MySQL , MongoDB, PyCharm, AWS.  
+2018 - 2021 | Intel  | Network Engineer & Lab Intern   
+● Handled service requests and resolved issues with high customer satisfaction.  
+● Deployed network infrastructure (switches, routers, APs) in various environments.  
+● Developed lab software tools in Python.  
+● Managed global projects, including planning and task management.  
+Tech Stack: Switching, Routing and Wireless operations  (CCNA),  batch, Python, SQLite.  
+ 
+EDUCATION  
+  2021 - Present  | The Open University | M.Sc. Computer Science  
+ 
+  2016 - 2020 |  Azrieli College of Engineering  | B.Sc. Software Engineering  
+ 
+MILITARY  
+2010 - 2013 |  IDF - Navy  | Classified  
+ 
+LANGUAGES  
+● Hebrew - Native Speaker  
+● English – Fluent   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
