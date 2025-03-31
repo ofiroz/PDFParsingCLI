@@ -115,7 +115,6 @@ We've chosen to implement a readability analyzer for CVs that evaluates the clar
 
 #### LLM Interactions
 - [Requirements Definition Chat](chats/requirements_definition.txt)
-- [Acceptance Criteria Refinement](chats/acceptance_criteria.txt)
 
 ### Phase 2: Architecture
 
@@ -153,7 +152,6 @@ Options:
 
 #### LLM Interactions
 - [Architecture Planning Chat](chats/architecture_planning.txt)
-- [Library Selection Discussion](chats/library_selection.txt)
 
 ### Phase 3: Design
 
@@ -179,7 +177,7 @@ Options:
 
 #### LLM Interactions
 - [Design Strategy Chat](chats/design_strategy.txt)
-- [Class Structure Discussion](chats/class_structure.txt)
+
 
 ### Phase 4: Coding & Testing
 
@@ -245,7 +243,6 @@ def test_end_to_end_processing():
 
 #### LLM Interactions
 - [Testing Strategy Chat](chats/testing_strategy.txt)
-- [Test Case Design](chats/test_case_design.txt)
 
 ## Phase 5: Documentation
 
