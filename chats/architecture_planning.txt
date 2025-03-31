@@ -1,0 +1,29 @@
+               +-----------------------+
+               |   CLI Command Input   |
+               | python cv_analyzer.py |
+               +-----------------------+
+                         │
+                         ▼
+               +--------------------+
+               | Extract PDF Text   |
+               | (pdf_parser.py)    |
+               +--------------------+
+                         │
+                         ▼
+               +-----------------------+
+               | Analyze Readability   |
+               | (readability.py)      |
+               +-----------------------+
+                         │
+                         ▼
+               +-----------------------+
+               | Detect Passive Voice  |
+               | & Suggest Changes     |
+               | (suggestions.py)      |
+               +-----------------------+
+                         │
+                         ▼
+               +-----------------------+
+               | Generate Output       |
+               | (CLI or File)         |
+               +-----------------------+

@@ -2,7 +2,7 @@ import argparse
 import os
 from PyPDF2 import PdfReader
 
-from cv_analyzer import send_query
+from cv_analyzer import send_query, parse_gemini_response
 
 
 class PDFProcessor:
@@ -82,28 +82,20 @@ class PDFProcessor:
             elif command in ['--version', '-v']:
                 print(self.version)
             elif command in ['--score', '-s']:
-                if path is None:
-                    print("Error: Please enter a path to a PDF file.")
-                else:
-                    answer = send_query("prompts/readability score prompt.txt",path)
+                answer = send_query("prompts/readability score prompt.txt","extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command in ['--grade', '-g']:
-                if path is None:
-                    print("Error: Please enter a path to a PDF file.")
-                else:
-                    answer = send_query("prompts/Flesch grade prompt.txt", path)
+                answer = send_query("prompts/Flesch grade prompt.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
-            elif command in ['--complexity', '-g']:
-                if path is None:
-                    print("Error: Please enter a path to a PDF file.")
-                else:
-                    answer = send_query("prompts/complexity analysis.txt", path)
+            elif command in ['--complexity', '-c']:
+                answer = send_query("prompts/complexity analysis.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command in ['--improve', '-i']:
-                if path is None:
-                    print("Error: Please enter a path to a PDF file.")
-                else:
-                    answer = send_query("prompts/improvement suggestions prompt.txt", path)
+                answer = send_query("prompts/improvement suggestions prompt.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command.startswith('--file'):
                 parts = command.split(maxsplit=1)

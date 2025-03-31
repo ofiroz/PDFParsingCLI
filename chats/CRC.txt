@@ -1,0 +1,50 @@
+CRC (Class-Responsibility-Collaboration) Description
+PDFProcessor Class
+
+Responsibilities:
+
+Display welcome message and help information
+Extract text from PDF files
+Manage interactive command-line interface
+Process user commands
+
+
+Collaborators:
+
+PdfReader (from PyPDF2)
+cv_analyzer module (send_query, parse_gemini_response)
+
+
+
+(Implicit) CV Analyzer Module
+
+Responsibilities:
+
+Format queries to send to Gemini API
+Send formatted queries to the API
+Parse responses from the API
+Extract readable text from API responses
+
+
+Collaborators:
+
+Google Generative AI (genai)
+PdfReader (from pypdf)
+
+
+
+(Implicit) Test Module
+
+Responsibilities:
+
+Test API response time against requirements
+Verify functionality meets specifications
+
+
+Collaborators:
+
+cv_analyzer module
+
+
+
+The application follows a modular design where each component has clear responsibilities and collaborations, adhering to the XP principle of simple design while fulfilling the requirements for readability analysis of CV documents.
