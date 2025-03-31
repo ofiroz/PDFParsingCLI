@@ -10,7 +10,7 @@ genai.configure(api_key="AIzaSyCdosn5Pm4cVw5xKVa-XoGtSdBeGhotZJY")
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 #paths:
-prompt_path =  "prompts/prompt1.txt"
+prompt_path =  "prompts/readability score prompt.txt"
 cv_path = 'cvs/cv-01.pdf'
 response = send_query(prompt_path,cv_path)
 print(response)

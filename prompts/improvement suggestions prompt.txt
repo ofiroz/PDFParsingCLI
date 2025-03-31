@@ -1,0 +1,30 @@
+<PASSIVE_VOICE>
+[List each instance of passive voice]
+1. "[PASSIVE_CONSTRUCTION]" (Location: [SECTION])
+   - Suggested active alternative: "[ACTIVE_ALTERNATIVE]"
+2. ...
+</PASSIVE_VOICE>
+
+<JARGON_DETECTION>
+[List potential jargon or overly technical terms/phrases]
+1. "[JARGON_TERM/PHRASE]" (Location: [SECTION])
+   - Simplified alternative: "[SIMPLIFIED_VERSION]"
+2. ...
+</JARGON_DETECTION>
+
+<IMPACT_ENHANCEMENT>
+[Suggest ways to enhance impact and clarity through stronger language]
+1. [SECTION_NAME]:
+   - Current: "[CURRENT_TEXT]"
+   - Improved: "[ENHANCED_TEXT]"
+2. ...
+</IMPACT_ENHANCEMENT>
+
+<PRIORITY_IMPROVEMENTS>
+- Top 3 issues to address:
+  1. [ISSUE_1]
+  2. [ISSUE_2]
+  3. [ISSUE_3]
+- Overall improvement potential: [HIGH/MEDIUM/LOW]
+- Estimated readability improvement if all suggestions implemented: [PERCENTAGE]% increase
+</PRIORITY_IMPROVEMENTS>

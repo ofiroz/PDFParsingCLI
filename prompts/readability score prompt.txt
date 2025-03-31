@@ -1,0 +1,24 @@
+<READABILITY_SCORES>
+- Flesch Reading Ease: [SCORE]/100
+- Interpretation: [EXPLANATION] (e.g., "Fairly difficult to read", "College level")
+- Overall readability assessment: [BRIEF_ASSESSMENT]
+</READABILITY_SCORES>
+
+<READABILITY_PATTERNS>
+[List patterns that affect readability, excluding sentence complexity]
+1. [PATTERN_DESCRIPTION] (e.g., "Dense text blocks in Skills section")
+2. ...
+</READABILITY_PATTERNS>
+
+<READABILITY_SCORE_BY_SECTION>
+[List each section with its readability score]
+1. [SECTION_NAME]: [SCORE]/100 ([INTERPRETATION])
+2. ...
+</READABILITY_SCORE_BY_SECTION>
+
+<SUMMARY>
+- Overall Flesch Reading Ease: [SCORE]/100
+- Target score for optimal CV readability: 60-70/100 (equivalent to 8th-9th grade level)
+- Gap between current and target score: [GAP_POINTS]
+- Primary factors affecting readability: [LIST_FACTORS_EXCLUDING_COMPLEXITY]
+</SUMMARY>

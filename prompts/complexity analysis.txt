@@ -1,0 +1,33 @@
+<COMPLEXITY_METRICS>
+- Total sentences analyzed: [NUMBER]
+- Number of complex sentences (>20 words): [NUMBER]
+- Percentage of complex sentences: [PERCENTAGE]%
+- Average sentence length: [NUMBER] words
+- Longest sentence: [NUMBER] words
+</COMPLEXITY_METRICS>
+
+<COMPLEX_SENTENCES>
+[List each sentence exceeding 20 words]
+1. "[SENTENCE]" (Word count: [COUNT], Location: [SECTION])
+2. ...
+</COMPLEX_SENTENCES>
+
+<SECTION_COMPLEXITY>
+[List sections by complexity]
+1. [SECTION_NAME]: [NUMBER] complex sentences ([PERCENTAGE]% of section)
+2. ...
+</SECTION_COMPLEXITY>
+
+<COMPLEXITY_IMPROVEMENT>
+[List complex sentences with rewrite suggestions]
+1. Original: "[ORIGINAL_COMPLEX_SENTENCE]" (Word count: [COUNT])
+   - Suggested rewrite: "[SIMPLIFIED_VERSION]" (Word count: [NEW_COUNT])
+2. ...
+</COMPLEXITY_IMPROVEMENT>
+
+<SUMMARY>
+- Overall complexity assessment: [HIGH/MEDIUM/LOW]
+- Primary contributors to complexity: [LIST_FACTORS]
+- Recommended complexity reduction target: Reduce complex sentences by [PERCENTAGE]%
+- Estimated impact on readability: [ASSESSMENT]
+</SUMMARY>

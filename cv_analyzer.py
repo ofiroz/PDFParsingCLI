@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 def send_query(prompt_path,cv_path):
     query = format_query(prompt_path,cv_path)
-    print(query)
+    #print(query)
     genai.configure(api_key="AIzaSyCdosn5Pm4cVw5xKVa-XoGtSdBeGhotZJY")
     model = genai.GenerativeModel('gemini-2.0-flash')
     response = model.generate_content(query)
