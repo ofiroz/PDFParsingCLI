@@ -1,3 +1,89 @@
+help with Phase 2: Architecture.
+
+think of yourself as an experienced softwared programmer who has 20 years of experience
+if needed draw it using shell syntax
+please follow step by step the instructions as i described them
+
+
+ChatGPT said:
+Phase 2: Architecture
+This phase defines the command-line interface (CLI) specification, file system interactions, third-party libraries, and team member responsibilities.
+
+1. Command-Line Interface Specification
+The CLI will accept a CV PDF file as input and provide a readability report as output.
+
+Usage Example:
+sh
+Copy
+Edit
+python cv_analyzer.py resume.pdf
+CLI Arguments:
+Argument	Description	Required
+resume.pdf	Path to the input CV (PDF format)	✅ Yes
+--verbose	Show detailed analysis output	❌ No
+--output report.txt	Save the analysis to a file	❌ No
+--help	Display help message	❌ No
+CLI Help Command Example:
+sh
+Copy
+Edit
+python cv_analyzer.py --help
+Output:
+
+lua
+Copy
+Edit
+Usage: python cv_analyzer.py [CV_FILE] [--output FILE] [--verbose]  
+Analyze the readability and clarity of a CV in PDF format.  
+
+Arguments:  
+  CV_FILE       Path to the CV in PDF format (required).  
+  --output FILE Save analysis results to a specified file.  
+  --verbose     Show detailed sentence-level feedback.  
+  --help        Show this help message and exit.  
+2. File System Interactions
+The application interacts with files as follows:
+
+plaintext
+Copy
+Edit
+📂 cv_analyzer/            # Project root  
+ ├── 📄 cv_analyzer.py     # Main script (CLI entry point)  
+ ├── 📂 data/              # Sample CVs for testing  
+ │    ├── resume1.pdf  
+ │    ├── resume2.pdf  
+ ├── 📂 output/            # Generated analysis reports  
+ │    ├── report.txt  
+ ├── 📂 modules/           # Custom modules  
+ │    ├── pdf_parser.py    # Extracts text from PDF  
+ │    ├── readability.py   # Performs readability analysis  
+ │    ├── suggestions.py   # Generates improvement suggestions  
+ ├── 📂 tests/             # Automated test cases  
+ │    ├── test_readability.py  
+ │    ├── test_parser.py  
+ ├── 📂 chats/             # LLM interaction logs  
+ │    ├── requirements_chat.txt  
+ │    ├── design_chat.txt  
+ ├── 📄 README.md          # Project documentation  
+ ├── 📄 requirements.txt   # Dependencies list  
+3. Third-Party Libraries
+The following Python libraries will be used:
+
+Library	Purpose	Installation
+PyMuPDF (fitz)	Extracts text from PDF files	pip install pymupdf
+NLTK	Detects passive voice, analyzes readability	pip install nltk
+textstat	Computes readability scores	pip install textstat
+argparse	Handles CLI arguments (built-in)	N/A
+4. Team Member Responsibilities
+Team Member	Responsibility
+Member 1	PDF text extraction (using PyMuPDF)
+Member 2	Readability scoring (using textstat)
+Member 3	Passive voice & suggestion module (using NLTK)
+Member 4	CLI implementation & testing
+Shell Syntax Diagram (High-Level Workflow)
+plaintext
+Copy
+Edit
                +-----------------------+
                |   CLI Command Input   |
                | python cv_analyzer.py |

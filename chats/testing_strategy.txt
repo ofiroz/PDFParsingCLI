@@ -1,5 +1,5 @@
 my prompt:
-give me examples of what tests i can have in my project
+give me examples of what tests i can have in my project, dont forget the file i added in our project  named "requirements.txt"
 
 response:
 I'd be happy to help you create comprehensive tests for your CV analysis project. Based on your requirements, here are several types of tests you should include:

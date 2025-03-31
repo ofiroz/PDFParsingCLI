@@ -1,6 +1,8 @@
 prompt:
 how should we implement XP in our code?
 and how we did do that up untill now?
+think of yourself as a very experienced teacher in sofware-engeneering university course.
+please explain in detail but also be to-the-point kind of teacher
 
 Your code shows several XP principles in action:
 

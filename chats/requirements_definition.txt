@@ -1,6 +1,6 @@
 
 You said:
-suggest Requirements
+suggest Requirements, remember your role from before, make it according to our project requirements
 
 
 Phase 1: Requirements Engineering

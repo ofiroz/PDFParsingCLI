@@ -1,3 +1,7 @@
+you said:
+please follow the format i gave you and give me a CRC as i need it in the project, format added in xml.
+format...
+
 CRC (Class-Responsibility-Collaboration) Description
 PDFProcessor Class
 
