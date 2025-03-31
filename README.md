@@ -253,3 +253,67 @@ The documentation has been provided throughout this README.md file, following th
 - Project phase documentation
 
 All aspects have been documented according to specifications, with appropriate Markdown formatting.
+
+## How to Use Tests
+
+### Running Tests
+The CV Analyzer comes with a comprehensive test suite to verify functionality. To run the tests:
+
+```bash
+# Run all tests
+python -m unittest tests
+
+# Run a specific test class
+python -m unittest tests.UnitTests
+
+# Run a specific test method
+python -m unittest tests.UnitTests.test_format_query
+```
+
+### Test Categories
+
+1. **Unit Tests** - Test individual functions and components:
+   - `test_format_query`: Verifies proper formatting of API queries
+   - `test_api_response_time`: Ensures API responses meet performance requirements
+   - `test_parse_gemini_response`: Tests parsing of different response formats
+
+2. **System Tests** - Test end-to-end functionality:
+   - `test_end_to_end_readability_analysis`: Verifies the complete process from CV input to readability analysis
+
+### Writing New Tests
+
+To add new tests, extend the existing test classes in `tests.py` or create new ones:
+
+```python
+def test_new_functionality(self):
+    """Test description here"""
+    # Test implementation
+    result = function_to_test()
+    self.assertEqual(expected_result, result)
+```
+
+### Test Data
+
+Sample test data is available in the `test_data/` directory:
+- `sample_cv.pdf`: A sample CV for testing extraction and analysis
+- Test prompt templates in various formats
+
+### Running Tests with Coverage
+
+To measure test coverage:
+
+```bash
+# Install coverage tool if not already installed
+pip install coverage
+
+# Run tests with coverage
+coverage run -m unittest discover
+
+# Generate coverage report
+coverage report
+
+# Generate HTML coverage report for detailed analysis
+coverage html
+```
+
+After running the HTML coverage report, open `htmlcov/index.html` in your browser to see detailed coverage information.
