@@ -22,13 +22,14 @@ class PDFProcessor:
     def display_help(self):
         """Display help information about available commands."""
         print("\nAvailable commands:")
-        print("--file [path]   : Upload and process a new PDF file.")
-        print("-s | --score    : Flesch-Score, a readability metric (0-30: hard, 60-70: standard, 90-100: easy).")
-        print("-g | --grade    : Flesch-Kincaid Grade Level, retuens the text U.S. school grade level (e.g., score 8 means 8th-grade reading level).")
-        print("-i | --improve  : Suggests improvements to make the text easier to read.")
-        print("-v | --version  : Returns this app version.")
-        print("-h | --help     : Display this help information.")
-        print("exit            : Exit application.")
+        print("--file [path]    : Upload and process a new PDF file.")
+        print("-s | --score     : Flesch-Score, a readability metric (0-30: hard, 60-70: standard, 90-100: easy).")
+        print("-g | --grade     : Flesch-Kincaid Grade Level, retuens the text U.S. school grade level (e.g., score 8 means 8th-grade reading level).")
+        print("-i | --improve   : Suggests improvements to make the text easier to read.")
+        print("-c | --complexity: Sentence complexity analysis with stats, section breakdowns, rewrites, and readability recommendations.")
+        print("-v | --version   : Returns this app version.")
+        print("-h | --help      : Display this help information.")
+        print("exit             : Exit application.")
         print("\nAfter processing, you can enter these commands directly.")
 
     def extract_text(self, pdf_path=None):
