@@ -1,0 +1,143 @@
+
+You said:
+suggest Requirements, remember your role from before, make it according to our project requirements
+
+
+Phase 1: Requirements Engineering
+Feature Selection: Readability & Clarity Score
+This feature evaluates the readability and clarity of a CV using well-known readability metrics, detects complex sentences, and provides improvement suggestions.
+
+Requirements Specification
+Functional Requirements
+Extract Text from PDF
+
+The system shall extract text from a provided CV in PDF format.
+
+The extraction shall handle single and multi-column CVs.
+
+Analyze Readability
+
+The system shall compute readability scores using:
+
+Flesch Reading Ease
+
+Flesch-Kincaid Grade Level
+
+The system shall flag sentences exceeding 20 words as complex.
+
+Detect Passive Voice & Jargon
+
+The system shall identify passive voice using NLTK.
+
+The system shall flag potential jargon-heavy sentences.
+
+Provide Suggestions for Improvement
+
+The system shall suggest:
+
+Rewriting long/complex sentences.
+
+Converting passive voice to active voice.
+
+Simplifying jargon-heavy phrases.
+
+Generate Output Report
+
+The system shall display results in a structured CLI output:
+
+Readability Score
+
+Flagged complex sentences
+
+Suggested improvements
+
+Non-Functional Requirements
+The system shall complete the analysis in under 5 seconds for a 2-page CV.
+
+The system shall support English-language CVs only.
+
+The system shall provide a clear and readable CLI output.
+
+Acceptance Criteria
+✅ Given a PDF CV, the system correctly extracts and processes the text.
+
+✅ The system computes readability scores with ±5% variance from standard tools.
+
+✅ The system flags at least 80% of complex sentences correctly.
+
+✅ The system identifies passive voice occurrences with at least 75% accuracy.
+
+✅ The system provides at least 3 actionable suggestions for clarity improvements.
+
+LLM Consultation Log
+🔗 Link to LLM interaction documentation (to be added in the chats/ directory).
+
+This version now fully aligns with Phase 1 of your project. Does this meet your expectations? If so, I can help with Phase 2: Architecture next! 😊
+
+
+
+
+
+
+
+
+You said:
+suggest more Non-Functional Requirements
+
+
+ChatGPT said:
+Here are additional Non-Functional Requirements (NFRs) to enhance your Readability & Clarity Score feature:
+
+Expanded Non-Functional Requirements
+Performance
+
+The system shall complete the analysis in under 5 seconds for a 2-page CV.
+
+The system shall process PDFs up to 5MB in size without performance degradation.
+
+Usability
+
+The CLI output shall be structured and easy to read, with clear labels.
+
+The system shall provide help/documentation accessible via a --help flag.
+
+Scalability
+
+The system shall be designed to easily extend with additional readability metrics if needed.
+
+Portability
+
+The system shall be compatible with Windows, macOS, and Linux.
+
+The system shall support Python 3.8 or newer.
+
+Reliability
+
+The system shall handle corrupt or unreadable PDFs gracefully, providing a meaningful error message.
+
+The system shall detect and handle missing or empty content without crashing.
+
+Security
+
+The system shall not store or transmit CV data externally to protect privacy.
+
+The system shall sanitize PDF input to prevent malicious payloads.
+
+Maintainability
+
+The system shall follow PEP 8 coding standards for readability.
+
+The system shall include comments and documentation for key functions.
+
+Extensibility
+
+The system shall allow for easy integration of additional NLP models or metrics.
+
+These additions cover performance, usability, reliability, security, and scalability, making your project robust and professional. Let me know if you need further refinements! 🚀
+
+
+
+
+
+
+

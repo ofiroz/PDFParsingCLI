@@ -1,0 +1,37 @@
+my prompt:
+give me examples of what tests i can have in my project, dont forget the file i added in our project  named "requirements.txt"
+
+response:
+I'd be happy to help you create comprehensive tests for your CV analysis project. Based on your requirements, here are several types of tests you should include:
+
+Unit Tests
+Text Extraction Tests
+Test extraction from single-column PDFs
+Test extraction from multi-column PDFs
+Test handling of PDFs with images or charts
+Test extraction of text with different fonts/formatting
+Readability Calculation Tests
+Test Flesch Reading Ease score calculation with known examples
+Test Flesch-Kincaid Grade Level calculation with known examples
+Test complex sentence detection (>20 words)
+Linguistic Feature Detection Tests
+Test passive voice detection with various sentence structures
+Test jargon detection against a predefined list of industry terms
+Test edge cases like sentences with quotations or parentheses
+Suggestion Generation Tests
+Test complex sentence simplification logic
+Test passive-to-active voice conversion
+Test jargon simplification suggestions
+Integration Tests
+End-to-End Processing Tests
+Test the full pipeline from PDF input to final report output
+Verify correct output format structure
+Test with various real-world CV examples
+Performance Tests
+Test processing time for 1-page, 2-page, and larger CVs
+Verify the 5-second performance requirement is met
+Test memory usage during processing
+CLI Interface Tests
+Test command-line argument parsing
+Test help documentation display
+Test error handling for invalid inputs

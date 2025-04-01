@@ -1,0 +1,35 @@
+```xml
+<instructions>
+<READABILITY_SCORES>
+- Flesch Reading Ease: 31.2/100
+- Interpretation: Very difficult to read.
+- Overall readability assessment: The CV is difficult to read, requiring a college graduate level of understanding. This is mainly due to complex sentences and jargon.
+</READABILITY_SCORES>
+
+<READABILITY_PATTERNS>
+[List patterns that affect readability, excluding sentence complexity]
+1. Extensive use of technical jargon: The CV is filled with technical terms and acronyms (e.g., microservices, cloud-native, CI/CD, AWS, Kubernetes, Elasticsearch). While necessary to convey skills, it creates a barrier for non-technical readers.
+2. Dense information blocks: The Technical Proficiencies and Professional Experience sections present a lot of information in a compact space, making it visually overwhelming.
+3. Formatting inconsistencies: Minor formatting issues (e.g., spacing in "San F rancisco") can distract from the content.
+4. Use of numbers and percentages: While helpful, excessive use of percentages (e.g., "40% improvement," "60% reduction") can be overwhelming if not presented with clear context.
+</READABILITY_PATTERNS>
+
+<READABILITY_SCORE_BY_SECTION>
+[List each section with its readability score]
+1. PROFESSIONAL SUMMARY: 23.5/100 (Very Difficult)
+2. TECHNICAL PROFICIENCIES: N/A (List of keywords, not a full text)
+3. PROFESSIONAL EXPERIENCE: 32.1/100 (Very Difficult)
+4. EDUCATION: N/A (List of degrees, not a full text)
+5. CERTIFICATIONS: N/A (List of certifications, not a full text)
+6. PUBLICATIONS & PRESENTATIONS: N/A (List of publications, not a full text)
+7. LANGUAGES: N/A (List of languages, not a full text)
+</READABILITY_SCORE_BY_SECTION>
+
+<SUMMARY>
+- Overall Flesch Reading Ease: 31.2/100
+- Target score for optimal CV readability: 60-70/100 (equivalent to 8th-9th grade level)
+- Gap between current and target score: ~30-40 points
+- Primary factors affecting readability: Technical jargon, dense information blocks, and potentially complex sentence structures (though complexity analysis not performed).
+</SUMMARY>
+</instructions>
+```

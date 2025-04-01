@@ -1,3 +1,2 @@
-#!/bin/sh
 python cli.py
-sleep 2
+sleep 3

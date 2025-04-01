@@ -2,11 +2,14 @@ import argparse
 import os
 from PyPDF2 import PdfReader
 
+from cv_analyzer import send_query, parse_gemini_response
+
+
 class PDFProcessor:
     def __init__(self):
         self.extracted_text = ""
         self.output_file = "extracted_text.txt"
-        self.version = "1.0.1"
+        self.version = "1.0.3"
     
     def display_welcome(self):
         print("="*50)
@@ -67,6 +70,7 @@ class PDFProcessor:
                 pdf_path = None
         
     def interactive_mode(self):
+        global path
         print("\nEnter a command (--help for options, or 'exit' to quit):")
         while True:
             command = input("> ").strip().lower()
@@ -78,13 +82,20 @@ class PDFProcessor:
             elif command in ['--version', '-v']:
                 print(self.version)
             elif command in ['--score', '-s']:
-                print("Flesch-Score functionality would be implemented here.")
+                answer = send_query("prompts/readability score prompt.txt","extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command in ['--grade', '-g']:
-                print("Flesch-Kincaid Grade Level functionality would be implemented here.")
+                answer = send_query("prompts/Flesch grade prompt.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
+                pass
+            elif command in ['--complexity', '-c']:
+                answer = send_query("prompts/complexity analysis.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command in ['--improve', '-i']:
-                print("Suggestions functionallity would be implemented here.")
+                answer = send_query("prompts/improvement suggestions prompt.txt", "extracted_text.txt")
+                print(parse_gemini_response(answer))
                 pass
             elif command.startswith('--file'):
                 parts = command.split(maxsplit=1)

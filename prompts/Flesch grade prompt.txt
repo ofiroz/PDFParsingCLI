@@ -1,0 +1,17 @@
+<GRADE_LEVEL_ANALYSIS>
+- Flesch-Kincaid Grade Level: [GRADE]
+- Interpretation: [BRIEF_EXPLANATION] (e.g., "College sophomore level")
+- Average syllables per word: [NUMBER]
+</GRADE_LEVEL_ANALYSIS>
+
+<SECTION_BREAKDOWN>
+[List each major section of the CV with its grade level]
+1. [SECTION_NAME]: Grade Level [NUMBER]
+2. ...
+</SECTION_BREAKDOWN>
+
+<SUMMARY>
+- Overall educational level required to understand this CV: [LEVEL]
+- Sections requiring highest educational level: [SECTION_NAMES]
+- Recommendation: [BRIEF_RECOMMENDATION about appropriate grade level for target audience]
+</SUMMARY>
